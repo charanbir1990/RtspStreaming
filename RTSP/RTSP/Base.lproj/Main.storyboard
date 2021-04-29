@@ -16,26 +16,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S8y-E2-TtM">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lR-Ov-BN0">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h3e-Pf-lc9">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="h3e-Pf-lc9" firstAttribute="leading" secondItem="0lR-Ov-BN0" secondAttribute="leading" id="1si-RM-OLR"/>
+                                    <constraint firstAttribute="bottom" secondItem="h3e-Pf-lc9" secondAttribute="bottom" id="A3w-R1-PMp"/>
+                                    <constraint firstItem="h3e-Pf-lc9" firstAttribute="centerY" secondItem="0lR-Ov-BN0" secondAttribute="centerY" id="B69-Zf-S4l"/>
+                                    <constraint firstItem="h3e-Pf-lc9" firstAttribute="centerX" secondItem="0lR-Ov-BN0" secondAttribute="centerX" id="Vgd-U6-TDI"/>
+                                    <constraint firstAttribute="trailing" secondItem="h3e-Pf-lc9" secondAttribute="trailing" id="Zpy-KX-Z5q"/>
+                                    <constraint firstItem="h3e-Pf-lc9" firstAttribute="top" secondItem="0lR-Ov-BN0" secondAttribute="top" id="xuj-ky-61S"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="o7d-BF-SHo"/>
+                                </connections>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="S8y-E2-TtM" secondAttribute="bottom" id="C1B-Jm-oyG"/>
-                            <constraint firstItem="S8y-E2-TtM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HPS-be-mH5"/>
-                            <constraint firstAttribute="trailing" secondItem="S8y-E2-TtM" secondAttribute="trailing" id="RGc-vg-QHQ"/>
-                            <constraint firstItem="S8y-E2-TtM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lQd-Jd-F91"/>
+                            <constraint firstItem="0lR-Ov-BN0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6FZ-dI-vk4"/>
+                            <constraint firstAttribute="bottom" secondItem="0lR-Ov-BN0" secondAttribute="bottom" id="Sbl-z3-zwL"/>
+                            <constraint firstItem="0lR-Ov-BN0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="e5V-Ij-xJD"/>
+                            <constraint firstItem="0lR-Ov-BN0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fEC-6d-3Yg"/>
+                            <constraint firstItem="0lR-Ov-BN0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="ipV-Xk-WzU"/>
+                            <constraint firstItem="0lR-Ov-BN0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wYU-XA-6yo"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="S8y-E2-TtM" id="IpG-JD-PRE"/>
+                        <outlet property="imageView" destination="h3e-Pf-lc9" id="iES-Bn-3qd"/>
+                        <outlet property="scrollVw" destination="0lR-Ov-BN0" id="SqZ-Wt-rJ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14" y="89"/>
+            <point key="canvasLocation" x="13.043478260869566" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>
