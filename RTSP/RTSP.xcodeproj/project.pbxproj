@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB00532E263B59CA0095CF31 /* AllCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00532D263B59CA0095CF31 /* AllCamViewController.swift */; };
 		EBA7A46F263AB87E003BB48C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7A46E263AB87E003BB48C /* AppDelegate.swift */; };
 		EBA7A471263AB87E003BB48C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7A470263AB87E003BB48C /* SceneDelegate.swift */; };
 		EBA7A473263AB87E003BB48C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7A472263AB87E003BB48C /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB00532D263B59CA0095CF31 /* AllCamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCamViewController.swift; sourceTree = "<group>"; };
 		EBA7A46B263AB87E003BB48C /* RTSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA7A46E263AB87E003BB48C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBA7A470263AB87E003BB48C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				EBA7A46E263AB87E003BB48C /* AppDelegate.swift */,
 				EBA7A470263AB87E003BB48C /* SceneDelegate.swift */,
 				EBA7A472263AB87E003BB48C /* ViewController.swift */,
+				EB00532D263B59CA0095CF31 /* AllCamViewController.swift */,
 				EBA7A474263AB87E003BB48C /* Main.storyboard */,
 				EBA7A477263AB87F003BB48C /* Assets.xcassets */,
 				EBA7A479263AB87F003BB48C /* LaunchScreen.storyboard */,
@@ -483,6 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB00532E263B59CA0095CF31 /* AllCamViewController.swift in Sources */,
 				EBA7A507263AB8F5003BB48C /* Utilities.m in Sources */,
 				EBA7A473263AB87E003BB48C /* ViewController.swift in Sources */,
 				EBA7A506263AB8F5003BB48C /* AudioStreamer.m in Sources */,
@@ -654,7 +658,7 @@
 					"$(PROJECT_DIR)/libRtsp/FFMpegiOS/lib",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = charan.RTSP1;
+				PRODUCT_BUNDLE_IDENTIFIER = charan.RTSP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RTSP/RTSP-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -684,7 +688,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/libRtsp/FFMpegiOS/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = charan.RTSP1;
+				PRODUCT_BUNDLE_IDENTIFIER = charan.RTSP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RTSP/RTSP-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
