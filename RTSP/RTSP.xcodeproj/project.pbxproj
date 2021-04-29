@@ -654,7 +654,7 @@
 					"$(PROJECT_DIR)/libRtsp/FFMpegiOS/lib",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = charan.RTSP;
+				PRODUCT_BUNDLE_IDENTIFIER = charan.RTSP1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RTSP/RTSP-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -684,7 +684,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/libRtsp/FFMpegiOS/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = charan.RTSP;
+				PRODUCT_BUNDLE_IDENTIFIER = charan.RTSP1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RTSP/RTSP-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

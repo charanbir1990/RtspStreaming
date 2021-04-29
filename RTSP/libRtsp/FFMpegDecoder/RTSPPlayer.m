@@ -83,8 +83,9 @@
     
     // Set the RTSP Options
     AVDictionary *opts = 0;
-    if (usesTcp) 
+    if (usesTcp) {
         av_dict_set(&opts, "rtsp_transport", "tcp", 0);
+    }
 
     
     if (avformat_open_input(&pFormatCtx, [moviePath UTF8String], NULL, &opts) !=0 ) {
@@ -108,10 +109,10 @@
             videoStream=i;
         }
         
-        if (pFormatCtx->streams[i]->codec->codec_type==AVMEDIA_TYPE_AUDIO) {
-            audioStream=i;
-            NSLog(@"found audio stream");
-        }
+//        if (pFormatCtx->streams[i]->codec->codec_type==AVMEDIA_TYPE_AUDIO) {
+//            audioStream=i;
+//            NSLog(@"found audio stream");
+//        }
     }
     
     if (videoStream==-1 && audioStream==-1) {
@@ -344,7 +345,12 @@ initError:
     if (_currentPacket.size > 0 || _inBuffer) return &_currentPacket;
     
     NSMutableData *packetData = [audioPacketQueue objectAtIndex:0];
-    _packet = [packetData mutableBytes];
+    @try{
+        _packet = [packetData mutableBytes];
+    }
+    @catch(NSError *err) {
+        
+    }
     
     if (_packet) {
         if (_packet->dts != AV_NOPTS_VALUE) {
